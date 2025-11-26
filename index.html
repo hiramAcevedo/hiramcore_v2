@@ -121,15 +121,27 @@
                 - MP4 (H.264): Formato principal, compatible con todos los navegadores
                 - WebM: Formato alternativo con mejor compresión
               -->
+
+              <!-- Reproducción de video con contenido local o alojado en un servidor:
               <video controls preload="metadata" poster="media/portada.png">
-                <!-- Fuente principal: MP4 -->
+                Fuente principal: MP4 Comentario
                 <source src="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4" type="video/mp4">
-                <!-- Fuente alternativa: WebM -->
+                Fuente alternativa: WebM Comentario
                 <source src="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4.webm" type="video/webm">
-                <!-- Mensaje para navegadores sin soporte HTML5 -->
+                Mensaje para navegadores sin soporte HTML5 Comentario
                 Tu navegador no soporta el elemento de video HTML5.
                 <a href="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4">Descarga el video aquí</a>.
               </video>
+              -->
+
+              <div class="video-responsive">
+                <iframe
+                  src="https://www.youtube.com/embed/kzoApBwcprM?si=GcG5huSFXVEYoWUT&modestbranding=1&rel=0&iv_load_policy=3&controls=1&loop=1&playlist=kzoApBwcprM"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
               <p class="media-caption">
                 HiramCore Ep. 01 — "Pensamientos Intrusivos" | 2025
               </p>
