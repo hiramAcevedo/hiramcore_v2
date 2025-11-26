@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Test coverage
+coverage/
+*.lcov
+
+# Jest cache
+.jest-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+
+__tests__/
+jest.setup.js
+jest.config.js
+package.json
+
+# Media
+media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4 

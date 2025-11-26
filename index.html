@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="HiramCore — Proyecto multimedia sobre tecnología, filosofía y la intersección entre lo creativo y lo profesional.">
+  <title>HiramCore — Pensamientos Intrusivos</title>
+
+  <!-- 
+    Tipografías de Google Fonts
+    - Playfair Display: Tipografía serif elegante para títulos
+    - Source Serif 4: Tipografía serif legible para cuerpo de texto
+    - JetBrains Mono: Tipografía monoespaciada para detalles técnicos
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos CSS externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       ENCABEZADO / NAVEGACIÓN
+       Header fijo con logo tipográfico y navegación
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <!-- 
+        Logo tipográfico: Cada letra con una tipografía diferente
+        "Hiram" en crema, "cöre" en dorado
+      -->
+      <a href="index.html" class="typographic-logo">
+        <span class="l-h">H</span><span class="l-i">i</span><span class="l-r1">r</span><span class="l-a">a</span><span
+          class="l-m">m</span><span class="l-c">c</span><span class="l-o">ö</span><span class="l-r2">r</span><span
+          class="l-e">e</span>
+      </a>
+
+      <!-- Navegación principal -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SECCIÓN HERO
+         Presentación principal con el título y descripción del proyecto
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-tagline">Tecnología · Filosofía · Intersección</span>
+        <h1 class="hero-title">
+          Pensamientos<br>
+          <em>intrusivos</em>
+        </h1>
+        <p class="hero-description">
+          Un espacio donde la curiosidad no pide permiso. Reflexiones sobre tecnología,
+          filosofía, el mercado laboral y lo que significa ser un generalista en un mundo
+          que premia la especialización.
+        </p>
+        <div class="hero-meta">
+          <span>Desarrollo Web</span>
+          <span>Producción Audiovisual</span>
+          <span>Filosofía Aplicada</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SECCIÓN DE VIDEO — EPISODIO 01: PENSAMIENTOS INTRUSIVOS
+         Utilizando la etiqueta <video> de HTML5
+         
+         Atributos importantes:
+         - controls: Muestra los controles nativos de reproducción
+         - preload="metadata": Carga solo metadatos al inicio (optimización)
+         - poster: Imagen de vista previa antes de reproducir
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">01</span>
+          <h2>Video: Pensamientos Intrusivos</h2>
+        </header>
+
+        <div class="grid-layout">
+          <!-- Columna izquierda: Contexto -->
+          <aside class="aside-content">
+            <p>
+              El primer episodio donde exploro las preguntas que la velocidad
+              del mundo moderno nos obliga a ignorar.
+            </p>
+            <dl class="details-list">
+              <dt>Duración</dt>
+              <dd>~8 minutos</dd>
+              <dt>Tema</dt>
+              <dd>Identidad, categorías y el mito del especialista</dd>
+              <dt>Formato</dt>
+              <dd>Video-ensayo</dd>
+            </dl>
+            <blockquote class="quote-block">
+              "Mi nicho soy yo. Y sí, suena narcisista—una palomita a la triada oscura."
+            </blockquote>
+          </aside>
+
+          <!-- Columna derecha: Video y transcripción -->
+          <div>
+            <div class="media-container">
+              <!-- 
+                ETIQUETA VIDEO DE HTML5
+                
+                Se incluyen dos fuentes para máxima compatibilidad:
+                - MP4 (H.264): Formato principal, compatible con todos los navegadores
+                - WebM: Formato alternativo con mejor compresión
+              -->
+              <video controls preload="metadata" poster="media/portada.png">
+                <!-- Fuente principal: MP4 -->
+                <source src="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4" type="video/mp4">
+                <!-- Fuente alternativa: WebM -->
+                <source src="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4.webm" type="video/webm">
+                <!-- Mensaje para navegadores sin soporte HTML5 -->
+                Tu navegador no soporta el elemento de video HTML5.
+                <a href="media/1080p_8000kbps_ACC128kbps_MP4_H264.mp4">Descarga el video aquí</a>.
+              </video>
+              <p class="media-caption">
+                HiramCore Ep. 01 — "Pensamientos Intrusivos" | 2025
+              </p>
+            </div>
+
+            <!-- 
+              TRANSCRIPCIÓN DEL VIDEO
+              Elemento <details> de HTML5 para contenido expandible (accesibilidad)
+            -->
+            <details class="transcript-container">
+              <summary class="transcript-toggle">Leer Transcripción Completa</summary>
+              <div class="transcript-text">
+                <p>A veces me siento frente al código y empiezo a disociarme en ese momento me pregunto: ¿Por qué nos
+                  encanta tanto —a los humanos obviamente, no somos zarigüeyas… ¿verdad? "(le pregunta al gato)
+                  Inconcluso. Nos encanta crear categorias,"</p>
+
+                <p>Clases, etiquetas. Porque claro, así describir el mundo se vuelve más sencillo. —En efecto, si no
+                  fuéramos así no sabría que definitivamente no eres una zarigüeya… ¿perro?— (le dice al gato). Mmm…</p>
+
+                <p>Pero lo peor es que no solo clasificamos cosas y no paramos con los animales: también clasificamos
+                  humanos. Nos encasillamos. Nos dividimos, gordos, flacos, blancos. No paramos en lo inmediatamente
+                  perceptible. Nos convertimos en nuestros trabajos, en nuestras actividades, en lo que "somos buenos
+                  para hacer", como si esa fuera toda nuestra identidad.</p>
+
+                <p>Yo siempre he luchado contra eso, contra ponerme etiquetas y clasificaciones he intentado nunca
+                  definirme porque la definición enmarca, limita… esto se traslada incluso a mis gustos, aficiones y
+                  decisión de carrera jugar en estos términos comienza a ser riesgoso.</p>
+
+                <p>Pero ¿qué me gusta? Pues… tengo una lista variada de intereses. Y por eso estoy creando este proyecto
+                  al que llame Hiramcore.</p>
+
+                <p>Aunque el marketing diga que hay que elegir un nicho, yo decidí hacer lo contrario. Mi nicho soy yo.
+                  (Y sí suena narcisista, una palomita a la triada oscura.)</p>
+
+                <p>Pero es que no creo en un mundo reduccionista. No sé si quiero dedicar mi vida a estudiar el ala
+                  izquierda de la mosca de la fruta durante 40 años.</p>
+
+                <p>No creo que el conocimiento humano sea un montón de cajitas aisladas que no pueden tocarse entre sí.
+                  "El filósofo solo filosofa, el físico solo habla de física, el artista que no se meta en política
+                  porque no sabe…" Pues no. La verdad está entre todo eso o al menos yo lo veo así.</p>
+
+                <p>El arte revela a la naturaleza, y la naturaleza se cuela en el arte. Y ahí me siento cómodo: en la
+                  intersección.</p>
+
+                <p>No puedo tener un camino de una sola vía, sin retornos, sin desvíos, sin intersecciones. Debo
+                  enfocarme, sí… pero también debo aceptar que el camino que elegí no fue mi primera opción y eso a
+                  veces no se siente tan bien.</p>
+
+                <p>Los japoneses le llaman ikigai: encontrar ese punto donde lo que amas, lo que puedes hacer y lo que
+                  te da de comer se cruzan. Y tiene sentido… Pero yo no puedo vivir solo de las segundas opciones… ni de
+                  las segundas opciones de las segundas opciones.</p>
+
+                <p>Primero me gustaba el dibujo. Dibujaba tan bien que me daba pena. Luego, en la secundaria, descubrí
+                  la música mi abuelo era músico pensé que estaba destinado para eso… llegue a nivel licenciatura pero
+                  simplemente no lo termine. Paralelamente me distracción habitual era el mundo audiovisual.</p>
+
+                <p>Y de vez en cuando me instalaba Kali Linux para robarme el Internet del vecino, hacía algunas páginas
+                  web, hasta conseguí mi propio dominio hiramwoki.tk ¿Cómo lo conseguí? Ni idea, todo esto no como un
+                  fin, sino como herramienta para mostrar lo que hacía mis videos y mi música.</p>
+
+                <p>Y aquí estamos ahora casi 10 años después: estudiando desarrollo de software. Y me encanta. Pero
+                  también veo que el software casi siempre existe para resolver otros problemas de la vida. No funge
+                  como un fin sí mismo, lo veo como un medio.</p>
+
+                <p>Porque nadie escribe mil líneas de código solo por ver que bonitas pueden quedar. Al contrario de la
+                  música, la poesía o la pintura, donde el punto sí es puramente estético, que te haga sentir algo, o
+                  simplemente experimentar la limites de la comunicación humana.</p>
+
+                <p>Lo mismo pasa en filosofía, o incluso en física: Primero la curiosidad. Primero preguntamos: "¿Por
+                  qué pienso?", "¿Por qué la banana siempre cae?". Y solo después construimos puentes y edificios como
+                  consecuencia practica. Claro todo esto es debatidle y destrózame en los comentarios.</p>
+
+                <p>Ahora bien, seamos francos: si tenemos que buscar planes B para sobrevivir… es porque, en mi caso,
+                  siendo artista, no parecía haber mucho al final del túnel. Y la opción "segura" parecía la tecnología
+                  y así fue hasta ChatGPT.</p>
+
+                <p>Ahora estamos a las puertas de la cuarta o quinta revolución industrial —ya perdí la cuenta— y
+                  después de la pandemia ya no solo las artes y la docencia son las actividades con altas probabilidades
+                  de precarización: Hasta el mundo tech parece que se cae a pedazos.</p>
+
+                <p>Decenas de miles de despidos en Silicon Valley. IA generativa. Robots listos para trabajar y quitar
+                  todos los empleos repetitivos que puedan. Irónicamente las mayores cantidades de dinero invertidas en
+                  décadas pero quemándose en tarjetas de video.</p>
+
+                <p>Entonces surge la pregunta: ¿Quién se va a salvar? ¿Los especialistas? Solo las 10 personas que
+                  entienden la teoría de números o ¿Los generalistas de rápido aprendizaje? Yo pienso más bien en los
+                  políticos.</p>
+
+                <p>El problema es que no soy un NPC aunque quisiera. No me veo capaz de ser el especialista y
+                  desgraciadamente debo admitirlo: esto también me ha jugado en contra y puede que lo arrastre un buen
+                  rato pero tampoco me veo más de 30 años en el mismo puesto antes terminaré cultivando camote de cerro.
+                </p>
+
+                <p>No estoy 100% satisfecho —sería mentirle a mi psicólogo y a ustedes—. Pero lo que sí sé es que
+                  obligarme a ignorar esta dicotomía entre lo creativo y lo "profesional" en mi persona muchas veces
+                  aterriza en en burnout y hartazgo, todo el año pasado me la pase así.</p>
+
+                <p>Porque el sistema castiga la inquietud. Nos alejamos del ideal griego del ciudadano que cultiva la
+                  virtud intelectual y física, y sobre todo que tiene tiempo para hacerlo.</p>
+
+                <p>¿Es posible ser un polímata hoy como lo fue Leonardo Davinci, Mijaíl Lomonósov? Esa idea siempre me
+                  ha fascinado desde pequeño, quizá yo solo soy muy tonto para ser un erudito, pero ¿esos personajes si
+                  quiera son viables a día de hoy, el modelo académico hoy lo permite podrían desarrollarse o
+                  terminarían expulsados de esas mismas instituciones? ¿Es solo capacidad individual? Viabilidad por el
+                  contexto material? ¿O todas las anteriores?</p>
+
+                <p>El punto aquí es que para algunos: La compulsión de la curiosidad no se va aunque resulte en ir
+                  directa y frontalmente en contra de la norma establecida.</p>
+
+                <p>Y aunque no me guste admitirlo siempre he sido "el que mucho abarca y poco aprieta"… Y sí, a mí ya se
+                  me han caído todas las cosas, al menos una vez. Pero nunca olvido lo esencial.</p>
+
+                <p>Por cierto, me llamo Hiram, y estos son… pensamientos intrusivos donde me doy cuenta que—</p>
+
+                <p><em>(silencio, el video regresa al inicio creando el loop narrativo)</em></p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SECCIÓN DE AUDIO — EPISODIO 00: PRESENTACIÓN
+         Utilizando la etiqueta <audio> de HTML5
+         
+         Atributos importantes:
+         - controls: Muestra los controles nativos de reproducción
+         - preload="metadata": Carga solo metadatos al inicio
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">00</span>
+          <h2>Audio: Presentación</h2>
+        </header>
+
+        <div class="grid-layout">
+          <!-- Columna izquierda: Contexto -->
+          <aside class="aside-content">
+            <p>
+              El episodio piloto donde presento el proyecto y sus intenciones.
+              Para cuando prefieras escuchar mientras caminas, programas o
+              necesitas un respiro de las pantallas.
+            </p>
+            <dl class="details-list">
+              <dt>Formato</dt>
+              <dd>MP3 / OGG</dd>
+              <dt>Bitrate</dt>
+              <dd>192 kbps</dd>
+              <dt>Ideal para</dt>
+              <dd>Trayecto, mientras programas, o un respiro de pantallas</dd>
+            </dl>
+          </aside>
+
+          <!-- Columna derecha: Audio y transcripción -->
+          <div>
+            <div class="media-container">
+              <!-- 
+                ETIQUETA AUDIO DE HTML5
+                
+                Se incluyen dos fuentes para máxima compatibilidad:
+                - MP3: Formato universal, compatible con todos los navegadores
+                - OGG: Formato alternativo de código abierto
+              -->
+              <audio controls preload="metadata">
+                <!-- Fuente principal: MP3 -->
+                <source src="media/Episodio 0 - Presentación.wav" type="audio/mpeg">
+                <!-- Fuente alternativa: OGG Vorbis -->
+                <source src="media/Episodio 0 - Presentación.wav" type="audio/ogg">
+                <!-- Mensaje para navegadores sin soporte HTML5 -->
+                Tu navegador no soporta el elemento de audio HTML5.
+                <a href="media/Episodio 0 - Presentación.wav">Descarga el audio aquí</a>.
+              </audio>
+              <p class="media-caption">
+                HiramCore Ep. 00 — "Presentación" | Bienvenidos a HiramCore
+              </p>
+            </div>
+
+            <!-- 
+              TRANSCRIPCIÓN DEL AUDIO
+              Elemento <details> de HTML5 para contenido expandible (accesibilidad)
+            -->
+            <details class="transcript-container">
+              <summary class="transcript-toggle">Leer Transcripción Completa</summary>
+              <div class="transcript-text">
+                <p>"Muchas veces podemos creer que hemos encontrado todas las respuestas, que hemos descifrado
+                  exactamente lo que queremos, pero en un mundo lleno de algoritmos ¿estas aspiraciones son reales?</p>
+
+                <p>¿Cómo puede existir la reflexión cuando las respuestas se nos entregan sin esfuerzo? Y, sobre todo,
+                  cuando los requerimientos corren a velocidades nunca vistas."</p>
+
+                <p>"La pregunta aquí es: ¿si aún tenemos tiempo para hacernos más preguntas?</p>
+
+                <p>En mi caso, y ya con pocos meses para desbloquear los 30, definitivamente siento que inicié el
+                  maratón con un poco de retraso, y en algunos casos siento que directamente (notas agudas), no he
+                  empezado ni a correr."</p>
+
+                <p>Mi nombre es Hiram Agustín Acevedo López. Ahora mismo me encuentro estudiando la Licenciatura en
+                  Desarrollo de Sistemas Web, algo osado considerando cómo la IA simplemente germinó y empezó a ser útil
+                  justo después de inscribirme en esta carrera. La precisión fue increíble.</p>
+
+                <p>"Como dije antes tengo dudas, pero a estas alturas no sé si tengo el tiempo para considerarlas, y es
+                  por eso que me decidí por este formato. Por un proyecto 100% personal, porque aunque le he dedicado
+                  muchísimo tiempo a aprender y experimentar con medios audiovisuales, no siento que haya creado algo
+                  verdaderamente genuino; ni una obra que me identifique, algo que simplemente valide mi existencia. Y
+                  esa realidad conforme crezco, se siente cada vez más verdadera."</p>
+
+                <p>Ahora bien, ¿qué es lo que planeo? Quiero crear un espacio para mezclar mis aficiones: ya sea
+                  tecnología, inteligencia artificial, filosofía, modernidad, política, mercado laboral, aprendizaje,
+                  idiomas, tendencias tecnológicas… todo en lo posible desde un prisma critico y personal, con consejos
+                  y advertencias incluidas y, ¿por qué no?, con errores, que seguro tendré muchos.</p>
+
+                <p>Porque no soy ningún experto, y eso es lo interesante: puedo darme el lujo de crear sin la ilusión de
+                  ser alguien que ya lo sabe todo. No pretendo enseñarle a nadie nada, porque las respuestas que me
+                  encuentro a mi tampoco me agradan. Solo quiero ser un compañero mientras descubrimos las preguntas
+                  adecuadas a un mundo frenético y distante que nos niega las verdades.</p>
+
+                <p>Así que el trabajo más difícil lo harás tú: intentar pensar por ti mismo. Y si algo de lo que aquí
+                  presento te es de utilidad, o simplemente pone esos engranajes a rodar, yo ya me daré por bien
+                  servido.</p>
+
+                <p><strong>Bienvenidos a HiramCore.</strong></p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SECCIÓN SOBRE EL PROYECTO
+         Breve contexto y enlace a la página "Sobre mí"
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">∞</span>
+          <h2>Sobre el Proyecto</h2>
+        </header>
+
+        <div class="about-content">
+          <p>
+            <strong>HiramCore</strong> nace de la tensión entre lo creativo y lo profesional,
+            entre la curiosidad dispersa y la presión de especializarse. Es un proyecto
+            que abraza la intersección: tecnología, filosofía, producción audiovisual,
+            reflexiones sobre el mercado laboral y la inteligencia artificial.
+          </p>
+
+          <blockquote class="quote-block">
+            "No creo en un mundo reduccionista. No sé si quiero dedicar mi vida a
+            estudiar el ala izquierda de la mosca de la fruta durante 40 años."
+          </blockquote>
+
+          <p>
+            El proyecto explora preguntas como: ¿Es posible ser un polímata hoy como lo fue
+            Leonardo da Vinci? ¿El modelo académico actual permite el desarrollo de mentes
+            multidisciplinarias? ¿Quién se salvará en la era de la IA: los especialistas
+            o los generalistas?
+          </p>
+
+          <p>
+            <a href="sobre-mi.html">Conoce más sobre el autor →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       PIE DE PÁGINA
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Logo tipográfico en el footer -->
+      <p class="footer-logo">
+        <span class="l-h">H</span><span class="l-i">i</span><span class="l-r1">r</span><span class="l-a">a</span><span
+          class="l-m">m</span><span class="l-c" style="color: var(--color-accent);">c</span><span class="l-o"
+          style="color: var(--color-accent);">ö</span><span class="l-r2"
+          style="color: var(--color-accent);">r</span><span class="l-e" style="color: var(--color-accent);">e</span>
+      </p>
+      <p class="footer-copy">
+        © 2025 Hiram Agustín Acevedo López. Todos los derechos reservados.
+      </p>
+      <p class="footer-course">
+        Universidad de Guadalajara — Licenciatura en Desarrollo de Sistemas Web<br>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
