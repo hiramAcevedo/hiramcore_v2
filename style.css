@@ -26,27 +26,27 @@
   --color-bg-dark: #0a4570;
   --color-bg-card: rgba(0, 0, 0, 0.2);
   --color-bg-light: rgba(255, 255, 224, 0.05);
-  
+
   --color-text: #FFFFE0;
   --color-text-soft: rgba(255, 255, 224, 0.75);
   --color-text-muted: rgba(255, 255, 224, 0.5);
-  
-  --color-accent: #ffca37;
+
+  --color-accent: #fea600;
   --color-accent-soft: rgba(255, 202, 55, 0.8);
   --color-lavanda: #6473d8;
-  
+
   /* Tipografías */
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Source Serif 4', 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-  
+
   /* Espaciados */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   /* Bordes */
   --border-subtle: 1px solid rgba(255, 255, 224, 0.2);
   --border-accent: 2px solid var(--color-accent);
@@ -55,7 +55,9 @@
 /* ─────────────────────────────────────────────────────────────────────────────
    RESET Y ESTILOS BASE
    ───────────────────────────────────────────────────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,15 +71,43 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
+  /* Requerimiento: Imagen de fondo */
+  background-image: linear-gradient(rgba(14, 86, 137, 0.9), rgba(10, 69, 112, 0.95)), url('media/background.jpg');
+  /* Se usa portada.png como fondo con overlay para legibilidad */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: var(--color-text);
   line-height: 1.7;
   min-height: 100vh;
 }
 
+.logo-img {
+  height: 60px;
+  /* Ajustar tamaño según necesidad */
+  width: auto;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.logo-link {
+  border: none !important;
+}
+
+.logo-link:hover {
+  border: none !important;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    TIPOGRAFÍA
    ───────────────────────────────────────────────────────────────────────────── */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.2;
@@ -136,7 +166,8 @@ a:hover {
   border-bottom-color: var(--color-accent);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: var(--spacing-md);
   margin-bottom: var(--spacing-sm);
 }
@@ -178,13 +209,13 @@ hr.divider {
    LOGO TIPOGRÁFICO "Hiramcöre"
    Cada letra con una tipografía diferente
    ───────────────────────────────────────────────────────────────────────────── */
-.typographic-logo {
+/* .typographic-logo {
   display: inline-block;
   font-size: 1.8rem;
   line-height: 1;
   text-decoration: none !important;
   border: none !important;
-  /* Sombra sutil azul para despegarlo del fondo */
+  Sombra sutil azul para despegarlo del fondo | comentario
   text-shadow: 2px 2px 0px rgba(100, 115, 216, 0.3);
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -196,47 +227,48 @@ hr.divider {
   border-bottom: none !important;
 }
 
-/* Estilos individuales por letra (Con Fallbacks) */
+Estilos individuales por letra (Con Fallbacks) | comentario 
 
-/* H - Marker Felt (wide) */
+ H - Marker Felt (wide) | comentario
 .l-h {
   font-family: "Marker Felt", "Comic Sans MS", fantasy;
 }
 
-/* i - Luminari */
+ i - Luminari | comentario
 .l-i {
   font-family: "Luminari", "Bradley Hand", "Brush Script MT", cursive;
 }
 
-/* r - AppleMyungjo (Serif estilo oriental/clásico) */
+ r - AppleMyungjo (Serif estilo oriental/clásico) | comentario
 .l-r1 {
   font-family: "AppleMyungjo", "Batang", "Georgia", serif;
 }
 
-/* a - Futura (Geométrica) */
+ a - Futura (Geométrica) | comentario
 .l-a {
   font-family: "Futura", "Trebuchet MS", "Arial Black", sans-serif;
 }
 
-/* m - AppleMyungjo */
+ m - AppleMyungjo | comentario
 .l-m {
   font-family: "AppleMyungjo", "Batang", "Georgia", serif;
 }
 
-/* c - Symbola */
+ c - Symbola | comentario
 .l-c {
   font-family: "Symbola", "Segoe UI Symbol", "Arial", sans-serif;
   font-weight: bold;
-  color: var(--color-accent); /* La "c" en dorado para marcar "cöre" */
+  color: var(--color-accent);
+  La "c" en dorado para marcar "cöre"
 }
 
-/* ö - Chalkduster (Estilo tiza/gastado) */
+ ö - Chalkduster (Estilo tiza/gastado) | comentario 
 .l-o {
   font-family: "Chalkduster", "Impact", fantasy;
   color: var(--color-accent);
 }
 
-/* r - Courier New (Monospace máquina de escribir) */
+ r - Courier New (Monospace máquina de escribir) | comentario 
 .l-r2 {
   font-family: "Courier New", "Courier", monospace;
   font-weight: bold;
@@ -244,18 +276,18 @@ hr.divider {
   color: var(--color-accent);
 }
 
-/* e - Trattatello (Estilo elegante/cursivo) */
+ e - Trattatello (Estilo elegante/cursivo) | comentario 
 .l-e {
   font-family: "Trattatello", "Apple Chancery", cursive;
   font-style: italic;
   color: var(--color-accent);
 }
 
-/* Versión grande del logo para el hero */
+ Versión grande del logo para el hero | comentario 
 .typographic-logo.logo-large {
   font-size: clamp(3rem, 10vw, 5rem);
   text-shadow: 3px 3px 0px rgba(100, 115, 216, 0.25);
-}
+}*/
 
 /* ─────────────────────────────────────────────────────────────────────────────
    ENCABEZADO / NAVEGACIÓN
@@ -335,13 +367,11 @@ hr.divider {
   right: 15%;
   width: 1px;
   height: 100%;
-  background: linear-gradient(
-    to bottom, 
-    transparent 0%, 
-    var(--color-text-muted) 30%, 
-    var(--color-text-muted) 70%, 
-    transparent 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      var(--color-text-muted) 30%,
+      var(--color-text-muted) 70%,
+      transparent 100%);
 }
 
 .hero-content {
@@ -399,7 +429,7 @@ hr.divider {
     flex-direction: column;
     gap: var(--spacing-xs);
   }
-  
+
   .hero::before {
     display: none;
   }
@@ -471,7 +501,8 @@ hr.divider {
 .video-responsive {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
   background: #000;
@@ -531,7 +562,8 @@ audio {
   cursor: pointer;
   background-color: var(--color-bg-light);
   outline: none;
-  list-style: none; /* Oculta la flecha por defecto en algunos navegadores */
+  list-style: none;
+  /* Oculta la flecha por defecto en algunos navegadores */
   color: var(--color-text);
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -660,7 +692,7 @@ details[open] .transcript-toggle::before {
   .profile-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .bio-image {
     order: -1;
   }
@@ -812,6 +844,7 @@ details[open] .transcript-toggle::before {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -825,9 +858,17 @@ details[open] .transcript-toggle::before {
   animation: fadeInUp 0.8s ease forwards;
 }
 
-.hero-title { animation-delay: 0.1s; }
-.hero-description { animation-delay: 0.2s; }
-.hero-meta { animation-delay: 0.3s; }
+.hero-title {
+  animation-delay: 0.1s;
+}
+
+.hero-description {
+  animation-delay: 0.2s;
+}
+
+.hero-meta {
+  animation-delay: 0.3s;
+}
 
 /* ─────────────────────────────────────────────────────────────────────────────
    RESPONSIVE
@@ -836,20 +877,70 @@ details[open] .transcript-toggle::before {
   html {
     font-size: 16px;
   }
-  
+
   .section {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
-  
+
   .hero {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
-  
+
   .nav-links {
     gap: var(--spacing-sm);
   }
-  
+
   .typographic-logo {
     font-size: 1.3rem;
   }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   FORMULARIO DE CONTACTO
+   ───────────────────────────────────────────────────────────────────────────── */
+.contact-form {
+  margin-top: var(--spacing-sm);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-sm);
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-bg-dark);
+  border: var(--border-subtle);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(255, 202, 55, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  width: 100%;
+  text-align: center;
 }

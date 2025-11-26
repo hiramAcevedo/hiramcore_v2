@@ -27,10 +27,18 @@
   <header class="site-header">
     <nav class="nav-container">
       <!-- Logo tipográfico -->
+      <!-- Logo tipográfico -->
+      <!--
       <a href="index.html" class="typographic-logo">
         <span class="l-h">H</span><span class="l-i">i</span><span class="l-r1">r</span><span class="l-a">a</span><span
           class="l-m">m</span><span class="l-c">c</span><span class="l-o">ö</span><span class="l-r2">r</span><span
           class="l-e">e</span>
+      </a>
+      -->
+
+      <!-- Logo de Imagen (Requerimiento) -->
+      <a href="index.html" class="logo-link">
+        <img src="media/logo_small.svg" alt="HiramCore Logo" class="logo-img">
       </a>
 
       <!-- Navegación principal -->
@@ -107,6 +115,7 @@
       </blockquote>
 
       <!-- Caja de contacto -->
+      <!-- Caja de contacto (Formulario) -->
       <div class="contact-box">
         <h3>Contacto & Colaboración</h3>
         <p>
@@ -114,8 +123,30 @@
           Si buscas a alguien que entienda tanto la sintaxis de Java como la teoría del color,
           hablemos.
         </p>
-        <a href="/cdn-cgi/l/email-protection#d5bdbca7b4b8fbb4b6b0a3b0b1ba95b0bfb0b8a5b9bafbb6bab8" class="btn">Enviar
-          Correo</a>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+        </form>
       </div>
     </section>
 
@@ -170,15 +201,27 @@
        ═══════════════════════════════════════════════════════════════════════ -->
   <footer class="site-footer">
     <div class="footer-content">
+      <!--
       <p class="footer-logo">
         <span class="l-h">H</span><span class="l-i">i</span><span class="l-r1">r</span><span class="l-a">a</span><span
           class="l-m">m</span><span class="l-c" style="color: var(--color-accent);">c</span><span class="l-o"
           style="color: var(--color-accent);">ö</span><span class="l-r2"
           style="color: var(--color-accent);">r</span><span class="l-e" style="color: var(--color-accent);">e</span>
       </p>
+      -->
+
+      <!-- Logo de Imagen en Footer -->
+      <a href="index.html" class="logo-link" style="display: block; margin-bottom: var(--spacing-md);">
+        <img src="media/logo_small.svg" alt="HiramCore Logo" class="logo-img">
+      </a>
+      <p class="footer-course">
+        Conceptualización de servicios en la nube<br>
+        Hiram Agustín Acevedo López<br>
+        Código: 211693881 | <a href="mailto:hiram.acevedo.contacto@gmail.com"
+          style="color: inherit; text-decoration: underline;">hiram.acevedo.contacto@gmail.com</a>
+        Licenciatura en Desarrollo de Sistemas Web<br>
+        Universidad de Guadalajara <br>
+      </p>
       <p class="footer-copy">
         © 2025 Hiram Agustín Acevedo López. Todos los derechos reservados.
       </p>
-      <p class="footer-course">
-        Universidad de Guadalajara — Licenciatura en Desarrollo de Sistemas Web<br>
-        Actividad: Incorporación de recursos multimedia optimizados para la Web
